@@ -1,0 +1,104 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+      >
+        <svg
+          class="bi me-2"
+          width="40"
+          height="32"
+          role="img"
+          aria-label="Bootstrap"
+        >
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li><a href="#" class="nav-link px-2 text-white">Maths</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input
+          type="search"
+          class="form-control form-control-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2">
+          Logout!
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Create a post
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black">
+            Create a New post
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Modules</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Content of post..."
+                aria-label="Contents"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02" />
+              <label class="input-group-text" for="inputGroupFile02"
+                >Upload</label
+              >
+            </div>
+          </form>
+          <div></div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
